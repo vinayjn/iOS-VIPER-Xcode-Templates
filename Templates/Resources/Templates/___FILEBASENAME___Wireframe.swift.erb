@@ -20,9 +20,9 @@ final class ___VARIABLE_moduleName___Wireframe: BaseWireframe {
     // MARK: - Private properties -
 
     <%- if @interface.generate_sb -%>
-    private let storyboard = UIStoryboard(name: "___VARIABLE_moduleName___", bundle: nil)
+    private let _storyboard = UIStoryboard(name: "___VARIABLE_moduleName___", bundle: nil)
     <%- else -%>
-    private let storyboard = UIStoryboard(name: "<#___VARIABLE_moduleName___#>", bundle: nil)
+    private let _storyboard = UIStoryboard(name: "<#___VARIABLE_moduleName___#>", bundle: nil)
     <%- end -%>
 
 <% end -%>
@@ -32,7 +32,7 @@ final class ___VARIABLE_moduleName___Wireframe: BaseWireframe {
         <%- if @interface.generate_xib -%>
         let moduleViewController = ___VARIABLE_moduleName___ViewController()
         <%- else -%>
-        let moduleViewController = storyboard.instantiateViewController(ofType: ___VARIABLE_moduleName___ViewController.self)
+        let moduleViewController = _storyboard.instantiateViewController(ofType: ___VARIABLE_moduleName___ViewController.self)
         <%- end -%>
         super.init(viewController: moduleViewController)
         

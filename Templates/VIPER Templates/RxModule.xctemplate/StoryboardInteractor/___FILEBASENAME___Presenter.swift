@@ -16,16 +16,16 @@ final class ___VARIABLE_moduleName___Presenter {
 
     // MARK: - Private properties -
 
-    private unowned let view: ___VARIABLE_moduleName___ViewInterface
-    private let interactor: ___VARIABLE_moduleName___InteractorInterface
-    private let wireframe: ___VARIABLE_moduleName___WireframeInterface
+    private unowned let _view: ___VARIABLE_moduleName___ViewInterface
+    private let _interactor: ___VARIABLE_moduleName___InteractorInterface
+    private let _wireframe: ___VARIABLE_moduleName___WireframeInterface
 
     // MARK: - Lifecycle -
 
     init(view: ___VARIABLE_moduleName___ViewInterface, interactor: ___VARIABLE_moduleName___InteractorInterface, wireframe: ___VARIABLE_moduleName___WireframeInterface) {
-        self.view = view
-        self.interactor = interactor
-        self.wireframe = wireframe
+        self._view = view
+        self._interactor = interactor
+        self._wireframe = wireframe
     }
 }
 

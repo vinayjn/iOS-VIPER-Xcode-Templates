@@ -14,14 +14,14 @@ final class ___VARIABLE_moduleName___Presenter {
 
     // MARK: - Private properties -
 
-    private unowned let view: ___VARIABLE_moduleName___ViewInterface
-    private let wireframe: ___VARIABLE_moduleName___WireframeInterface
+    private unowned let _view: ___VARIABLE_moduleName___ViewInterface
+    private let _wireframe: ___VARIABLE_moduleName___WireframeInterface
 
     // MARK: - Lifecycle -
 
     init(view: ___VARIABLE_moduleName___ViewInterface, wireframe: ___VARIABLE_moduleName___WireframeInterface) {
-        self.view = view
-        self.wireframe = wireframe
+        self._view = view
+        self._wireframe = wireframe
     }
 }
 

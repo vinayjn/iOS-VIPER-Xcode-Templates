@@ -14,18 +14,18 @@ final class ___VARIABLE_moduleName___Presenter {
 
     // MARK: - Private properties -
 
-    private unowned let view: ___VARIABLE_moduleName___ViewInterface
-    private let formatter: ___VARIABLE_moduleName___FormatterInterface
-    private let interactor: ___VARIABLE_moduleName___InteractorInterface
-    private let wireframe: ___VARIABLE_moduleName___WireframeInterface
+    private unowned let _view: ___VARIABLE_moduleName___ViewInterface
+    private let _formatter: ___VARIABLE_moduleName___FormatterInterface
+    private let _interactor: ___VARIABLE_moduleName___InteractorInterface
+    private let _wireframe: ___VARIABLE_moduleName___WireframeInterface
 
     // MARK: - Lifecycle -
 
     init(view: ___VARIABLE_moduleName___ViewInterface, formatter: ___VARIABLE_moduleName___FormatterInterface, interactor: ___VARIABLE_moduleName___InteractorInterface, wireframe: ___VARIABLE_moduleName___WireframeInterface) {
-        self.view = view
-        self.formatter = formatter
-        self.interactor = interactor
-        self.wireframe = wireframe
+        self._view = view
+        self._formatter = formatter
+        self._interactor = interactor
+        self._wireframe = wireframe
     }
 }
 

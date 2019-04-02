@@ -18,26 +18,26 @@ final class ___VARIABLE_moduleName___Presenter {
 
     // MARK: - Private properties -
 
-    private unowned let view: ___VARIABLE_moduleName___ViewInterface
+    private unowned let _view: ___VARIABLE_moduleName___ViewInterface
 <% if @complexity.generate_formatter -%>
-    private let formatter: ___VARIABLE_moduleName___FormatterInterface
+    private let _formatter: ___VARIABLE_moduleName___FormatterInterface
 <% end -%>
 <% if @complexity.generate_interactor -%>
-    private let interactor: ___VARIABLE_moduleName___InteractorInterface
+    private let _interactor: ___VARIABLE_moduleName___InteractorInterface
 <% end -%>
-    private let wireframe: ___VARIABLE_moduleName___WireframeInterface
+    private let _wireframe: ___VARIABLE_moduleName___WireframeInterface
 
     // MARK: - Lifecycle -
 
     init(view: ___VARIABLE_moduleName___ViewInterface, <%= @complexity.generate_formatter ? 'formatter: ___VARIABLE_moduleName___FormatterInterface, ' : '' %><%= @complexity.generate_interactor ? 'interactor: ___VARIABLE_moduleName___InteractorInterface, ' : '' %>wireframe: ___VARIABLE_moduleName___WireframeInterface) {
-        self.view = view
+        self._view = view
         <%- if @complexity.generate_formatter -%>
-        self.formatter = formatter
+        self._formatter = formatter
         <%- end -%>
         <%- if @complexity.generate_interactor -%>
-        self.interactor = interactor
+        self._interactor = interactor
         <%- end -%>
-        self.wireframe = wireframe
+        self._wireframe = wireframe
     }
 }
 
