@@ -22,10 +22,10 @@ final class ___VARIABLE_moduleName___Presenter {
     // MARK: - Lifecycle -
 
     init(view: ___VARIABLE_moduleName___ViewInterface, formatter: ___VARIABLE_moduleName___FormatterInterface, interactor: ___VARIABLE_moduleName___InteractorInterface, wireframe: ___VARIABLE_moduleName___WireframeInterface) {
-        self._view = view
-        self._formatter = formatter
-        self._interactor = interactor
-        self._wireframe = wireframe
+        _view = view
+        _formatter = formatter
+        _interactor = interactor
+        _wireframe = wireframe
     }
 }
 

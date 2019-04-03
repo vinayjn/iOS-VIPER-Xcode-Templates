@@ -30,14 +30,14 @@ final class ___VARIABLE_moduleName___Presenter {
     // MARK: - Lifecycle -
 
     init(view: ___VARIABLE_moduleName___ViewInterface, <%= @complexity.generate_formatter ? 'formatter: ___VARIABLE_moduleName___FormatterInterface, ' : '' %><%= @complexity.generate_interactor ? 'interactor: ___VARIABLE_moduleName___InteractorInterface, ' : '' %>wireframe: ___VARIABLE_moduleName___WireframeInterface) {
-        self._view = view
+        _view = view
         <%- if @complexity.generate_formatter -%>
-        self._formatter = formatter
+        _formatter = formatter
         <%- end -%>
         <%- if @complexity.generate_interactor -%>
-        self._interactor = interactor
+        _interactor = interactor
         <%- end -%>
-        self._wireframe = wireframe
+        _wireframe = wireframe
     }
 }
 
@@ -51,7 +51,7 @@ extension ___VARIABLE_moduleName___Presenter: ___VARIABLE_moduleName___Presenter
 
         let formatterInput = ___VARIABLE_moduleName___.FormatterInput()
 
-        let formatterOutput = formatter.format(for: formatterInput)
+        let formatterOutput = _formatter.format(for: formatterInput)
 
         <%- end -%>
         return ViewInput(<%= @complexity.generate_formatter ? 'models: formatterOutput' : '' %>)
